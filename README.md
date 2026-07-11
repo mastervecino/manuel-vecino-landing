@@ -15,13 +15,11 @@ index.html
 style.css
 script.js
 assets/
-  photo.jpg               (profile photo — not yet added)
-  manuel_vecino_cv.pdf    (CV — not yet added)
+  photo.jpg               (profile photo)
+  manuel_vecino_cv.pdf    (CV)
 ```
 
-## Before deploying
+## Deploying
 
-1. Add a professional profile photo (min. 400x400px) at `assets/photo.jpg`.
-   Until it's added, the hero section falls back to a circular "MV" initials badge.
-2. Add the CV PDF at `assets/manuel_vecino_cv.pdf`. The "Download CV" and "View CV" buttons link there.
-3. Push to a repo named `mastervecino.github.io` and enable GitHub Pages (Settings → Pages → deploy from `main`).
+Push to a repo named `mastervecino.github.io` and enable GitHub Pages
+(Settings → Pages → deploy from `main`).
