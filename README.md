@@ -2,7 +2,7 @@
 
 Personal landing page for Manuel Vecino — Talent & Recruiting Operations.
 
-Live at: `mastervecino.github.io`
+Live at: `mastervecino.github.io/manuel-vecino-landing`
 
 ## Stack
 
@@ -21,5 +21,8 @@ assets/
 
 ## Deploying
 
-Push to a repo named `mastervecino.github.io` and enable GitHub Pages
-(Settings → Pages → deploy from `main`).
+Repo: `github.com/mastervecino/manuel-vecino-landing`
+
+Enable GitHub Pages: Settings → Pages → Source: "Deploy from a branch" →
+Branch: `main` / `root`. The site will be published at
+`https://mastervecino.github.io/manuel-vecino-landing/`.
