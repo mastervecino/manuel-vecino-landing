@@ -255,22 +255,9 @@ a {
 .cycle {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px 0;
-}
-
-.cycle::before {
-  content: '';
-  position: absolute;
-  top: 34px;
-  left: 5%;
-  right: 5%;
-  height: 1px;
-  background-color: var(--accent-blue);
-  opacity: 0.4;
-  z-index: 0;
+  gap: 12px 0;
 }
 
 .cycle-node {
@@ -278,10 +265,24 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  flex: 1 1 0;
-  min-width: 100px;
-  position: relative;
-  z-index: 1;
+  flex: 0 1 100px;
+  min-width: 90px;
+}
+
+.cycle-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 68px;
+  color: var(--accent-blue);
+  opacity: 0.7;
+}
+
+.cycle-arrow svg {
+  width: 22px;
+  height: 22px;
 }
 
 .cycle-icon {
@@ -451,15 +452,16 @@ a {
   }
 
   .cycle {
-    justify-content: flex-start;
+    justify-content: center;
+    row-gap: 28px;
   }
 
-  .cycle::before {
+  .cycle-arrow {
     display: none;
   }
 
   .cycle-node {
-    flex: 1 1 30%;
+    flex: 0 1 140px;
   }
 }
 
@@ -488,7 +490,7 @@ a {
   .cycle {
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 12px;
   }
 
   .cycle-node {
@@ -497,6 +499,16 @@ a {
     width: 100%;
     text-align: left;
     gap: 18px;
+  }
+
+  .cycle-arrow {
+    display: flex;
+    width: 54px;
+    height: 20px;
+  }
+
+  .cycle-arrow svg {
+    transform: rotate(90deg);
   }
 
   .cycle-icon {
