@@ -149,7 +149,7 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 130px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -211,36 +211,42 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 52px;
 }
 
-.hero-metrics {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-  border-top: 1px solid rgba(143, 168, 200, 0.4);
-  padding-top: 28px;
+/* Key results — opener of Selected Impact */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(143, 168, 200, 0.35);
+  border-bottom: 1px solid rgba(143, 168, 200, 0.35);
+  padding: 36px 0;
+  margin-bottom: 56px;
 }
 
 .metric {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.metric + .metric {
+  border-left: 1px solid rgba(143, 168, 200, 0.35);
 }
 
 .metric-value {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 34px;
   color: var(--accent-earth);
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
 
 .metric-label {
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text-secondary);
-  max-width: 150px;
 }
 
 .hero-photo-side {
@@ -600,12 +606,19 @@ a {
     margin-bottom: 40px;
   }
 
-  .hero-metrics {
-    gap: 24px 32px;
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 0;
+    margin-bottom: 44px;
+  }
+
+  .metric + .metric {
+    border-left: none;
   }
 
   .metric-value {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .value-grid {
