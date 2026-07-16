@@ -14,7 +14,7 @@ if (miniNav && hero) {
 
 // Fade-in on scroll for sections and cards
 const fadeTargets = document.querySelectorAll(
-  '.cycle-node, .value-card, .impact-card, .section-title, .contribute-text'
+  '.cycle-node, .value-card, .impact-card, .section-head, .ds-band'
 );
 
 fadeTargets.forEach((el) => el.classList.add('fade-in'));
